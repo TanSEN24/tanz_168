@@ -1,9 +1,17 @@
 import React from 'react'
 
 function Footer() {
+  const openHour = 7
+  const closeHour = 16
+  const hour = new  Date().getHours()
+  const isOpen = hour >= openHour && hour < closeHour
+  console.log(isOpen)
   return (
     <div>
-        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis eveniet rem veritatis doloremque ipsam quas fugit quo neque dolor?</h1>
+      {
+        isOpen ? <p>កំពុងបើកដំណើរការ</p>​: 
+        <p>ហាយយើងខ្ញុំបើកដំណើរការនៅចន្លោះម៉ោង​ {openHour}:00AM ដល់ម៉ោង {closeHour}:00PM</p>
+      }
     </div>
   )
 }
