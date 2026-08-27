@@ -57,3 +57,11 @@ title p{
 .price{
   font-size: 17px;
 }
+
+.soldOut {
+  filter: grayscale(100%);
+}
+
+span{
+  color: red;
+}

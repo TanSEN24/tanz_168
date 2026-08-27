@@ -17,6 +17,7 @@ function CourseList() {
           desc={course.description}
           image={course.image_url}
           price={course.price}
+          soldOut={course.soldOut}
           />
         ))
       }
